@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #242933;
+}
+
+main {
+  width: 100%;
+  background-color: #242933;
+}
+
+.form-container {
+  background-color: #242933;
+  width: 90%;
+  margin: 20px auto;
+}
+.form-registro {
+  background-color: #2f3644;
+  width: 90%;
+  max-width: 320px;
+  margin: auto;
+  padding: 25px;
+  border: 3px solid #393f55;
+  border-radius: 3px;
+  font-family: "Mulish", sans-serif;
+}
+
+.form-title {
+  color: #a7b8d9;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+.form-label {
+  font-size: 13px;
+  color: #8690b3;
+}
+.form-group-input {
+  position: relative;
+  top: 3px;
+}
+
+.form-input {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 3px #2f3644;
+  font-size: 11px;
+}
+.form-validate-state {
+  position: absolute;
+  padding: 2px;
+  width: 22px;
+  top: 6px;
+  right: 8px;
+}
+
+.form-input-message {
+  position: absolute;
+  top: 62px;
+  color: #db4949;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.error-input {
+  border-radius: 3px;
+  border: 3px solid #db4949;
+}
+
+.valid-input {
+  border-radius: 3px;
+  border: 3px solid #51d667;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #6c63ff;
+  width: 100%;
+  height: 45px;
+  font-weight: bold;
+  font-size: 11px;
+  border-radius: 3px;
+}

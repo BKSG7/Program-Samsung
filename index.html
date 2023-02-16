@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Create an account</title>
+  </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <form action="#" class="form-registro" id="formRegistro">
+          <!--Se indica action ="#" puesto que al ser un ejercicio no hay una dirección donde se reciben los datos y no se puede indicar la forma o tipo de envio (method). -->
+          <div class="form-title">
+            <h2>Create Account</h2>
+          </div>
+          <!--Campo Nombre-->
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre</label>
+            <div class="form-group-input">
+              <input type="text" class="form-input" id="name" value="" />
+              <img
+                class="form-validate-state hidden"
+                id="imagenErrorNombre"
+                src="/imagenes/error-icon.svg"
+                alt="icono error"
+              />
+              <img
+                class="form-validate-state hidden"
+                id="imagenValidNombre"
+                src="/imagenes/success-icon.svg"
+                alt="icono correcto"
+              />
+            </div>
+            <p class="form-input-message hidden" id="mensajeErrorNombre">
+              Nombre Inválido
+            </p>
+            <p class="form-input-message hidden" id="mensajeNombre">
+              Rellene este campo
+            </p>
+          </div>
+          <!--Campo Email-->
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <div class="form-group-input">
+              <input type="email" class="form-input" id="email" value="" />
+              <img
+                class="form-validate-state hidden"
+                id="imagenErrorEmail"
+                src="/imagenes/error-icon.svg"
+                alt="icono error"
+              />
+              <img
+                class="form-validate-state hidden"
+                id="imagenValidEmail"
+                src="/imagenes/success-icon.svg"
+                alt="icono correcto"
+              />
+            </div>
+            <p class="form-input-message hidden" id="mensajeErrorEmail">
+              Email Inválido
+            </p>
+            <p class="form-input-message hidden" id="mensajeEmail">
+              Rellene este campo
+            </p>
+          </div>
+          <!--Campo Clave-->
+          <div class="form-group">
+            <label for="clave" class="form-label">Clave</label>
+            <div class="form-group-input">
+              <input type="password" class="form-input" id="clave" value="" />
+              <img
+                class="form-validate-state hidden"
+                id="imagenErrorClave"
+                src="/imagenes/error-icon.svg"
+                alt="icono error"
+              />
+              <img
+                class="form-validate-state hidden"
+                id="imagenValidClave"
+                src="/imagenes/success-icon.svg"
+                alt="icono correcto"
+              />
+            </div>
+            <p class="form-input-message hidden" id="mensajeErrorClave">
+              Debe tener al menos 8 caracteres
+            </p>
+            <p class="form-input-message hidden" id="mensajeClave">
+              Rellene este campo
+            </p>
+          </div>
+          <!--Campo Confirmar Clave-->
+          <div class="form-group">
+            <label for="claveConfirm" class="form-label"
+              >Confirme su clave</label
+            >
+            <div class="form-group-input">
+              <input
+                type="password"
+                class="form-input"
+                id="claveConfirm"
+                value=""
+              />
+              <img
+                class="form-validate-state hidden"
+                id="imagenErrorClaveConfirm"
+                src="/imagenes/error-icon.svg"
+                alt="icono error"
+              />
+              <img
+                class="form-validate-state hidden"
+                id="imagenValidClaveConfirm"
+                src="/imagenes/success-icon.svg"
+                alt="icono correcto"
+              />
+            </div>
+            <p class="form-input-message hidden" id="mensajeErrorClaveConfirm">
+              Las contraseñas no coinciden
+            </p>
+            <p class="form-input-message hidden" id="mensajeClaveConfirm">
+              Rellene este campo
+            </p>
+          </div>
+          <!--Boton submmit-->
+          <button type="submit" id="submitButton" class="btn">ENVIAR</button>
+        </form>
+      </div>
+    </main>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
